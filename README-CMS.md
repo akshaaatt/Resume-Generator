@@ -7,7 +7,7 @@
 A single Markdown file at `edit-me/cms/personal.md`.
 
 | Field Name        | Type           | Description                                |
-| ----------------- | -------------- | ------------------------------------------ |
+|-------------------|----------------|--------------------------------------------|
 | `givenName`       | text, required | Your first name                            |
 | `familyName`      | text, required | Your last name                             |
 | `title`           | text, required | e.g. "Full Stack Developer"                |
