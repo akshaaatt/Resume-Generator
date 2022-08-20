@@ -10,6 +10,8 @@ export interface PersonalMarkdownAttributes {
   givenName: string;
   title?: string;
   twitterUsername?: string;
+  email?: string;
+  contactNumber?: string;
 }
 
 export interface CMSPersonalInformation {
@@ -29,14 +31,10 @@ export const getPersonalInformation =
     );
 
     invariant(attributes.location, 'personal.md missing "location" attribute.');
-    invariant(
-      attributes.familyName,
-      'personal.md missing "familyName" attribute.',
-    );
-    invariant(
-      attributes.givenName,
-      'personal.md missing "givenName" attribute.',
-    );
+    invariant(attributes.familyName, 'personal.md missing "familyName" attribute.');
+    invariant(attributes.givenName, 'personal.md missing "givenName" attribute.');
+    invariant(attributes.email, 'personal.md missing "email" attribute.');
+    invariant(attributes.contactNumber, 'personal.md missing "contactNumber" attribute.');
 
     const html = marked(body);
 
