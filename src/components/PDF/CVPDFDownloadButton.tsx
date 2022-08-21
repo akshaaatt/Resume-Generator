@@ -9,7 +9,7 @@ interface PDFDownloadButtonProps {
   secret?: string;
 }
 
-const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = (props) => {
+const CVPDFDownloadButton: React.FC<PDFDownloadButtonProps> = (props) => {
   const { secret } = props;
   const darkMode = usePrefersDarkMode();
 
@@ -24,9 +24,9 @@ const PDFDownloadButton: React.FC<PDFDownloadButtonProps> = (props) => {
       target="_blank"
     >
       <FontAwesomeIcon className={atoms({ marginRight: 2 })} icon={faFilePdf} />
-      View or Download PDF
+      CV PDF
     </a>
   );
 };
 
-export default PDFDownloadButton;
+export default CVPDFDownloadButton;

@@ -12,7 +12,7 @@ export const links: CMSLink[] = [
     title: 'Instagram',
   },
   {
-    href: 'https://www.linkedin.com/akshaaatt',
+    href: 'https://www.linkedin.com/in/akshaaatt',
     iconName: 'linkedin',
     title: 'LinkedIn',
   },

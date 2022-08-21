@@ -5,8 +5,9 @@ import Container from '../../strum-design-system/components/Container/Container'
 import Heading from '../../strum-design-system/components/Heading/Heading';
 import Column from '../../strum-design-system/components/Layout/Column';
 import Row from '../../strum-design-system/components/Layout/Row';
-import PDFDownloadButton from '../PDF/PDFDownloadButton';
+import CVPDFDownloadButton from '../PDF/CVPDFDownloadButton';
 import { headerStyle } from './Header.css';
+import ResumePDFDownloadButton from "../PDF/ResumePDFDownloadButton";
 
 const Header: React.FC<ResumePageProps> = (props) => {
   const { personalInformation, secret } = props;
@@ -31,7 +32,13 @@ const Header: React.FC<ResumePageProps> = (props) => {
             atoms={{ paddingTop: { xs: 4, md: 0 } }}
             width={{ xs: 12, sm: 12, md: 'auto' }}
           >
-            <PDFDownloadButton secret={secret} />
+            <ResumePDFDownloadButton secret={secret} />
+          </Column>
+          <Column
+              atoms={{ paddingTop: { xs: 4, md: 0 } }}
+              width={{ xs: 12, sm: 12, md: 'auto' }}
+          >
+            <CVPDFDownloadButton secret={secret} />
           </Column>
         </Row>
       </Container>

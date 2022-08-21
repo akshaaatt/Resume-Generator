@@ -39,7 +39,7 @@ const PageHead: React.FC<PageHeadProps> = (props) => {
       <meta property="og:title" content={title} />
       <meta
         property="og:site_name"
-        content={`Professional Résumé for ${fullName}`}
+        content={`Professional Resume for ${fullName}`}
       />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="profile" />

@@ -38,9 +38,9 @@ const ResumeLayout: React.FC<ResumePageProps> = (props) => {
   return (
     <>
       <PageHead
-        description={`Professional résumé for ${fullName}, ${jobTitle} living in ${personalInformation.attributes.location}.`}
+        description={`Professional resume for ${fullName}, ${jobTitle} living in ${personalInformation.attributes.location}.`}
         personalInformation={personalInformation}
-        title={`Résumé | ${fullName} | ${personalInformation.attributes.location}`}
+        title={`Resume | ${fullName} | ${personalInformation.attributes.location}`}
       />
 
       <Header secret={secret} {...props} />
