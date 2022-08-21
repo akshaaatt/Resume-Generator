@@ -22,7 +22,7 @@ const Header: React.FC<ResumePageProps> = (props) => {
               atoms={{ paddingTop: { xs: 4, md: 0 } }}
               width={{ xs: 12, sm: 12, md: 'auto' }}
           >
-            <Image src={myImage} width="128" height="128" className='rounded-full' />
+            <Image src={myImage} width="128" height="128" />
           </Column>
           <Column>
             <Heading

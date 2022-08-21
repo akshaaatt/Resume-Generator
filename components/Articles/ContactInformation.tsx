@@ -44,7 +44,14 @@ const ContactInformation: React.FC<ContactInformationProps> = (props) => {
             <Column width={{ xs: 'auto' }}>
               <strong>Website:</strong>
             </Column>
-            <Column>{personalInformation.attributes.website}</Column>
+            <Column>
+              <a
+                  href={personalInformation.attributes.website}
+                  rel="noreferrer"
+                  target='_blank'>
+                {personalInformation.attributes.website}
+              </a>
+            </Column>
           </Row>
         </NavListItem>
         {privateInformation &&

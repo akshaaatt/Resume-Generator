@@ -24,7 +24,7 @@ const CVPDFDownloadButton: React.FC<PDFDownloadButtonProps> = (props) => {
       target="_blank"
     >
       <FontAwesomeIcon className={atoms({ marginRight: 2 })} icon={faFilePdf} />
-      CV PDF
+      Complete CV PDF
     </a>
   );
 };
