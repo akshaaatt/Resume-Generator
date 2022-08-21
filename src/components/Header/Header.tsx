@@ -8,6 +8,8 @@ import Row from '../../strum-design-system/components/Layout/Row';
 import CVPDFDownloadButton from '../PDF/CVPDFDownloadButton';
 import { headerStyle } from './Header.css';
 import ResumePDFDownloadButton from "../PDF/ResumePDFDownloadButton";
+import Image from "next/image";
+import myImage from '../../../res/myImage.jpg'
 
 const Header: React.FC<ResumePageProps> = (props) => {
   const { personalInformation, secret } = props;
@@ -17,6 +19,7 @@ const Header: React.FC<ResumePageProps> = (props) => {
       <Container atoms={{ textAlign: { xs: 'center', md: 'left' } }}>
         <Row verticalAlign="center">
           <Column>
+            <Image src={myImage} width="64" height="64" />
             <Heading
               atoms={{ color: 'white' }}
               level={1}

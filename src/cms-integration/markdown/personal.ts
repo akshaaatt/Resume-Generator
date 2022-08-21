@@ -12,6 +12,7 @@ export interface PersonalMarkdownAttributes {
   twitterUsername?: string;
   email?: string;
   contactNumber?: string;
+  website?: string;
 }
 
 export interface CMSPersonalInformation {
@@ -35,6 +36,7 @@ export const getPersonalInformation =
     invariant(attributes.givenName, 'personal.md missing "givenName" attribute.');
     invariant(attributes.email, 'personal.md missing "email" attribute.');
     invariant(attributes.contactNumber, 'personal.md missing "contactNumber" attribute.');
+    invariant(attributes.website, 'personal.md missing "website" attribute.');
 
     const html = marked(body);
 
