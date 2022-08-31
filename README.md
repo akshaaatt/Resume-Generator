@@ -18,10 +18,6 @@ Your resume can also generate a secure URL that will display information not acc
 - [Testing Library](https://testing-library.com/)
 - [Vercel](https://vercel.com/)
 
-### It's FAST
-
-Your static generated site will load extremely quickly wherever you decide to deploy it, but it's built to deploy to Vercel with just one or two clicks. The screenshot here is from the very first Lighthouse test I ran on my own production deploy, using emulated mobile with "Slow 4G Throttling".
-
 ## How To Use This Project
 
 The project requires only a few steps to set up your custom config, add content to the internal CMS, and deploy to Vercel!
@@ -29,10 +25,6 @@ The project requires only a few steps to set up your custom config, add content 
 ### Clone and Deploy
 
 It may seem counter-intuitive, but the simplest way to get started is to clone and deploy in one step. Afterwards, you can edit the CMS and template to match your needs.
-
-The project is designed to be deployed with [Vercel](https://vercel.com). By clicking the "Deploy" button below, you will clone the project to your own repository and deploy to a free HTTPS domain with Vercel's high-performance edge network. The default project will include mock data that you can edit in the next step!
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fcolinhemphill%2Fnextjs-resume&env=PRIVATE_KEY&envDescription=Environment%20variables%20needed%20to%20run%20the%20application%20and%20provide%20private%20information%20links&envLink=https%3A%2F%2Fgithub.com%2Fcolinhemphill%2Fnextjs-resume%23environment-variables&project-name=nextjs-resume&repo-name=nextjs-resume&demo-title=Next.js%20R%C3%A9sum%C3%A9&demo-description=An%20example%20Next.js%20static%20r%C3%A9sum%C3%A9)
 
 ### Modify Custom Config
 
