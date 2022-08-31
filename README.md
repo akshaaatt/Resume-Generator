@@ -66,15 +66,3 @@ To add private data to the CMS, simply add it to the `privateFields` folder.
 
 - `cms/privateFields/`. Add as many private contact information fields as you want to display. They will appear in the order they are arranged in the folder, so you can use a number prefix to order them.
   - `label`: **required string**. The label of the field, such as "Email" or "Address".
-
-### Security
-
-This private URL is _only as secure as the people you send it to_. To invalidate an old private URL, you simply need to change the `PRIVATE_KEY` environment variable.
-
-## Design and Customizations
-
-The template is built to be responsive, beautiful, and accessible right out of the box. It supports automatic dark/light mode themeing in the web version, and a great single-page print layout in the PDF version. The project supports a minimal set of configurations such as accent colors, but if you're a front end developer or designer, you can easily open up the source code and customize it however you see fit.
-
-We use [OG Impact](https://ogimpact.sh/) to generate dynamic Open Graph (Facebook/Twitter) share images. By default, it will look something like this example from the Facebook Debugger:
-
-This dynamic share image will use your custom `primaryColor` setting, as well as data from the CMS.
