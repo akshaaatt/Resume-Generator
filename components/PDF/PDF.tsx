@@ -21,6 +21,7 @@ const domain = process.env.VERCEL_URL
   : 'http://localhost:3000';
 const fontPath = `${domain}/fonts/SourceSansPro`;
 const iconPath = `${domain}/pdf/fa-icons`;
+const myImage = `${domain}/pdf/myImage.jpg`
 
 Font.register({
   family: 'Source Sans Pro',
@@ -200,6 +201,9 @@ const PDF: React.FC<ResumePageProps> = (props) => {
       {/* @ts-ignore */}
       <Page size="LETTER" style={styles.page}>
         <View style={styles.sidebar}>
+          <Image
+              src={myImage}
+          />
           <View style={styles.header}>
             <Text style={styles.headerTitle}>{fullName}</Text>
             <Text style={styles.headerSubtitle}>

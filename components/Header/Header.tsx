@@ -9,7 +9,7 @@ import CVPDFDownloadButton from '../PDF/CVPDFDownloadButton';
 import { headerStyle } from './Header.css';
 import ResumePDFDownloadButton from "../PDF/ResumePDFDownloadButton";
 import Image from "next/image";
-import myImage from '../../res/myImage.jpg'
+import myImage from '../../public/pdf/myImage.jpg'
 
 const Header: React.FC<ResumePageProps> = (props) => {
   const { personalInformation, secret } = props;

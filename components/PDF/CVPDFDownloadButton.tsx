@@ -20,7 +20,7 @@ const CVPDFDownloadButton: React.FC<PDFDownloadButtonProps> = (props) => {
         color: darkMode ? 'primary' : 'medium',
         size: 'lg',
       })}
-      href={secret ? `/api/pdf?secret=${secret}` : '/api/pdf'}
+      href={secret ? `/api/pdf?secret=${secret}` : '/api/cv_pdf'}
       target="_blank"
     >
       <FontAwesomeIcon className={atoms({ marginRight: 2 })} icon={faFilePdf} />
