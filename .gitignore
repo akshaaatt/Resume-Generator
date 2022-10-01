@@ -40,3 +40,5 @@ yarn-error.log*
 **/public/worker-*.js
 
 tsconfig.tsbuildinfo
+
+.idea
