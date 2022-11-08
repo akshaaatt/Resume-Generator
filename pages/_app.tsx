@@ -4,9 +4,8 @@ import Head from 'next/head';
 import React from 'react';
 import ErrorBoundary from '../components/ErrorBoundary';
 import '../helpers/fontawesomeConfig';
-import '../src/strum-design-system';
-import StrumProvider from '../src/strum-design-system/components/StrumProvider/StrumProvider';
-import colors from '../src/strum-design-system/themes/timbre/colors';
+import {StrumProvider} from 'ashton-design-system';
+import {colors} from 'ashton-design-system';
 import '../styles/app.css';
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {

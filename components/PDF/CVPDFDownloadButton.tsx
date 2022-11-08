@@ -2,8 +2,7 @@ import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import usePrefersDarkMode from '../../helpers/useDarkMode';
-import { buttonStyle } from '../../src/strum-design-system/components/Button/Button.css';
-import { atoms } from '../../src/strum-design-system/sprinkles.css';
+import {atoms, buttonStyle} from "ashton-design-system";
 
 interface PDFDownloadButtonProps {
   secret?: string;

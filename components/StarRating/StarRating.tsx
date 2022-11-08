@@ -1,7 +1,7 @@
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import colors from '../../src/strum-design-system/themes/timbre/colors';
+import {colors} from 'ashton-design-system';
 
 interface StarRatingProps {
   stars: 1 | 2 | 3;

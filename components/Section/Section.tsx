@@ -1,6 +1,6 @@
 import React, { PropsWithChildren } from 'react';
-import Container from '../../src/strum-design-system/components/Container/Container';
 import { sectionStyle } from './Section.css';
+import {Container} from "ashton-design-system";
 
 interface Section {
   color?: keyof typeof sectionStyle;

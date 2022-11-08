@@ -1,6 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { atoms } from '../../src/strum-design-system/sprinkles.css';
-import { vars } from '../../src/strum-design-system/themes/contract.css';
+import {atoms, colors} from "ashton-design-system";
 
 export const footerStyle = atoms({
   backgroundColor: { darkMode: 'black', lightMode: 'medium' },
@@ -10,9 +9,9 @@ export const footerStyle = atoms({
 });
 
 export const footerLinkStyle = style({
-  color: vars.colors.white,
+  color: colors.white,
   textDecoration: 'underline',
   ':hover': {
-    color: vars.colors.white,
+    color: colors.white,
   },
 });

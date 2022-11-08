@@ -1,8 +1,8 @@
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { CMSPersonalInformation } from '../../cms-integration/markdown/personal';
-import Box from '../../src/strum-design-system/components/Box/Box';
 import SectionHeader from '../SectionHeader/SectionHeader';
+import {Box} from "ashton-design-system";
 
 interface AboutMeProps {
   personalInformation: CMSPersonalInformation;

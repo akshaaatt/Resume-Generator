@@ -1,8 +1,8 @@
 import { style } from '@vanilla-extract/css';
-import { vars } from '../../src/strum-design-system/themes/contract.css';
+import {spacers} from "ashton-design-system";
 
 export const articleStyle = style({
   selectors: {
-    '&:not(:last-child)': { marginBottom: vars.spacers[6] },
+    '&:not(:last-child)': { marginBottom: spacers[6] },
   },
 });

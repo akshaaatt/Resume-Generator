@@ -6,9 +6,6 @@ import indefinite from 'indefinite';
 import React from 'react';
 import { getFullName } from '../../helpers/utils';
 import { ResumePageProps } from '../../pages';
-import Box from '../../src/strum-design-system/components/Box/Box';
-import Column from '../../src/strum-design-system/components/Layout/Column';
-import Row from '../../src/strum-design-system/components/Layout/Row';
 import AboutMe from '../Articles/AboutMe';
 import ContactInformation from '../Articles/ContactInformation';
 import HobbiesAndInterests from '../Articles/HobbiesAndInterests';
@@ -20,6 +17,7 @@ import ProfessionalItem from '../ProfessionalItem/ProfessionalItem';
 import Section from '../Section/Section';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import Skills from '../Skills/Skills';
+import {Box, Column, Row} from "ashton-design-system";
 
 const ResumeLayout: React.FC<ResumePageProps> = (props) => {
   const {

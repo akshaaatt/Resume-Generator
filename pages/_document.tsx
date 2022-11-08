@@ -1,5 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-import { timbre } from '../src/strum-design-system/themes';
+import { timbre } from 'ashton-design-system';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {

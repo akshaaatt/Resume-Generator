@@ -1,15 +1,12 @@
 import React from 'react';
 import { getFullName } from '../../helpers/utils';
 import { ResumePageProps } from '../../pages';
-import Container from '../../src/strum-design-system/components/Container/Container';
-import Heading from '../../src/strum-design-system/components/Heading/Heading';
-import Column from '../../src/strum-design-system/components/Layout/Column';
-import Row from '../../src/strum-design-system/components/Layout/Row';
 import CVPDFDownloadButton from '../PDF/CVPDFDownloadButton';
 import { headerStyle } from './Header.css';
 import ResumePDFDownloadButton from "../PDF/ResumePDFDownloadButton";
 import Image from "next/image";
 import myImage from '../../public/pdf/myImage.jpg'
+import {Column, Container, Heading, Row} from "ashton-design-system";
 
 const Header: React.FC<ResumePageProps> = (props) => {
   const { personalInformation, secret } = props;

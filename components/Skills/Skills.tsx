@@ -1,12 +1,9 @@
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { CMSSkillCategory } from '../../cms-integration/markdown/skills';
-import Box from '../../src/strum-design-system/components/Box/Box';
-import Heading from '../../src/strum-design-system/components/Heading/Heading';
-import Column from '../../src/strum-design-system/components/Layout/Column';
-import Row from '../../src/strum-design-system/components/Layout/Row';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import StarRating from '../StarRating/StarRating';
+import {Box, Column, Heading, Row} from "ashton-design-system";
 
 interface SkillsProps {
   skills: CMSSkillCategory[];

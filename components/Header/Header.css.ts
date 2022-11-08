@@ -1,4 +1,4 @@
-import { atoms } from '../../src/strum-design-system/sprinkles.css';
+import {atoms} from "ashton-design-system";
 
 export const headerStyle = atoms({
   backgroundColor: { darkMode: 'black', lightMode: 'primary' },

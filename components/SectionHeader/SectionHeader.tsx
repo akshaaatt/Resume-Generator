@@ -2,9 +2,8 @@ import { faCircle, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import usePrefersDarkMode from '../../helpers/useDarkMode';
-import Heading from '../../src/strum-design-system/components/Heading/Heading';
-import colors from '../../src/strum-design-system/themes/timbre/colors';
-import { composeWithAtoms } from '../../src/strum-design-system/utils/compose';
+import { composeWithAtoms } from 'ashton-design-system';
+import {colors, Heading} from "ashton-design-system";
 
 interface SectionHeaderProps {
   icon: IconDefinition;

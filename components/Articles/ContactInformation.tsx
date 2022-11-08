@@ -2,12 +2,8 @@ import { faIdCard } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { CMSPersonalInformation } from '../../cms-integration/markdown/personal';
 import { CMSPrivateInformation } from '../../cms-integration/markdown/private';
-import Box from '../../src/strum-design-system/components/Box/Box';
-import Column from '../../src/strum-design-system/components/Layout/Column';
-import Row from '../../src/strum-design-system/components/Layout/Row';
-import NavListItem from '../../src/strum-design-system/components/Nav/NavListItem';
-import UnorderedList from '../../src/strum-design-system/components/Nav/UnorderedList';
 import SectionHeader from '../SectionHeader/SectionHeader';
+import {Box, Column, NavListItem, Row, UnorderedList} from "ashton-design-system";
 
 interface ContactInformationProps {
   personalInformation: CMSPersonalInformation;

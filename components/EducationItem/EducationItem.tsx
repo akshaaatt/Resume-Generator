@@ -2,9 +2,8 @@ import { faUniversity } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { CMSEducationalExperience } from '../../cms-integration/markdown/educational';
-import Heading from '../../src/strum-design-system/components/Heading/Heading';
-import { atoms } from '../../src/strum-design-system/sprinkles.css';
 import { articleStyle } from '../Articles/article.css';
+import {atoms, Heading} from "ashton-design-system";
 
 const EducationItem: React.FC<CMSEducationalExperience> = (props) => {
   return (
