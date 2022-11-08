@@ -19,7 +19,7 @@
     "dev": "next dev",
     "format": "prettier --write 'src/**/*.{json,js,ts,tsx}'",
     "lint": "next lint",
-    "prepare": "npm run copy",
+    "prepare": "yarn copy",
     "start": "next start",
     "test": "jest",
     "test:staged": "jest  --updateSnapshot --onlyChanged",
