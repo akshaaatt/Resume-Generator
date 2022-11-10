@@ -19,7 +19,6 @@ import PageHead from '../PageHead';
 import ProfessionalItem from '../ProfessionalItem/ProfessionalItem';
 import Section from '../Section/Section';
 import SectionHeader from '../SectionHeader/SectionHeader';
-import Skills from '../Skills/Skills';
 
 const ResumeLayout: React.FC<ResumePageProps> = (props) => {
   const {
@@ -58,7 +57,6 @@ const ResumeLayout: React.FC<ResumePageProps> = (props) => {
           </Column>
         </Row>
 
-        <Skills skills={skills} />
       </Section>
 
       <Section color="alternate">
