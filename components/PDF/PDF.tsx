@@ -13,8 +13,8 @@ import Html from 'react-pdf-html';
 import { HtmlProps } from 'react-pdf-html/dist/Html';
 import { getFullName } from '../../helpers/utils';
 import { ResumePageProps } from '../../pages';
-import colors from '../../src/strum-design-system/themes/timbre/colors';
-import spacers from '../../src/strum-design-system/themes/timbre/spacers';
+import colors from '../Design/themes/timbre/colors';
+import spacers from '../Design/themes/timbre/spacers';
 
 const domain = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`

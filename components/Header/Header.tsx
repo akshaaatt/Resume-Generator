@@ -1,10 +1,10 @@
 import React from 'react';
 import { getFullName } from '../../helpers/utils';
 import { ResumePageProps } from '../../pages';
-import Container from '../../src/strum-design-system/components/Container/Container';
-import Heading from '../../src/strum-design-system/components/Heading/Heading';
-import Column from '../../src/strum-design-system/components/Layout/Column';
-import Row from '../../src/strum-design-system/components/Layout/Row';
+import Container from '../Design/components/Container/Container';
+import Heading from '../Design/components/Heading/Heading';
+import Column from '../Design/components/Layout/Column';
+import Row from '../Design/components/Layout/Row';
 import CVPDFDownloadButton from '../PDF/CVPDFDownloadButton';
 import { headerStyle } from './Header.css';
 import ResumePDFDownloadButton from "../PDF/ResumePDFDownloadButton";

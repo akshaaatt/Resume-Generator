@@ -5,14 +5,14 @@ import {
   lightScheme,
   systemScheme,
 } from '../../themes/colorScheme.css';
-import { StrumContext } from './StrumContext';
+import { DesignContext } from './DesignContext';
 
-export interface StrumProviderProps {
+export interface DesignProviderProps {
   colorScheme?: 'dark' | 'light' | 'system';
   theme?: string | null;
 }
 
-const StrumProvider: React.FC<PropsWithChildren<StrumProviderProps>> = (
+const DesignProvider: React.FC<PropsWithChildren<DesignProviderProps>> = (
   props,
 ) => {
   const { children, colorScheme = 'system', theme = timbre } = props;
@@ -35,11 +35,11 @@ const StrumProvider: React.FC<PropsWithChildren<StrumProviderProps>> = (
 
   return (
     <>
-      <StrumContext.Provider value={{ colorScheme, theme }}>
+      <DesignContext.Provider value={{ colorScheme, theme }}>
         <div className={theme}>{children}</div>
-      </StrumContext.Provider>
+      </DesignContext.Provider>
     </>
   );
 };
 
-export default StrumProvider;
+export default DesignProvider;

@@ -4,12 +4,12 @@ import React from 'react';
 import { CMSLink } from '../../cms-integration/markdown/links';
 import { CMSPersonalInformation } from '../../cms-integration/markdown/personal';
 import { getFullName } from '../../helpers/utils';
-import AutoGrid from '../../src/strum-design-system/components/AutoGrid/AutoGrid';
-import AutoGridCell from '../../src/strum-design-system/components/AutoGrid/AutoGridCell';
-import Container from '../../src/strum-design-system/components/Container/Container';
-import { atoms } from '../../src/strum-design-system/sprinkles.css';
-import { visuallyHidden } from '../../src/strum-design-system/styles/accessibility.css';
-import colors from '../../src/strum-design-system/themes/timbre/colors';
+import AutoGrid from '../Design/components/AutoGrid/AutoGrid';
+import AutoGridCell from '../Design/components/AutoGrid/AutoGridCell';
+import Container from '../Design/components/Container/Container';
+import { atoms } from '../Design/sprinkles.css';
+import { visuallyHidden } from '../Design/styles/accessibility.css';
+import colors from '../Design/themes/timbre/colors';
 import { footerStyle } from './Footer.css';
 
 interface FooterProps {

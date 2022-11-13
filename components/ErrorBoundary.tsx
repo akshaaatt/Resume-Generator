@@ -1,8 +1,8 @@
 import React from 'react';
-import Alert from '../src/strum-design-system/components/Alert/Alert';
-import Container from '../src/strum-design-system/components/Container/Container';
-import Column from '../src/strum-design-system/components/Layout/Column';
-import Row from '../src/strum-design-system/components/Layout/Row';
+import Alert from './Design/components/Alert/Alert';
+import Container from './Design/components/Container/Container';
+import Column from './Design/components/Layout/Column';
+import Row from './Design/components/Layout/Row';
 
 interface State {
   hasError: boolean;

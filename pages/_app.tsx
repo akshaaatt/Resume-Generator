@@ -4,9 +4,9 @@ import Head from 'next/head';
 import React from 'react';
 import ErrorBoundary from '../components/ErrorBoundary';
 import '../helpers/fontawesomeConfig';
-import '../src/strum-design-system';
-import StrumProvider from '../src/strum-design-system/components/StrumProvider/StrumProvider';
-import colors from '../src/strum-design-system/themes/timbre/colors';
+import '../components/Design';
+import DesignProvider from '../components/Design/components/DesignProvider/DesignProvider';
+import colors from '../components/Design/themes/timbre/colors';
 import '../styles/globals.scss';
 import { CacheProvider } from '@emotion/react'
 import createEmotionCache from "../components/Utils/createEmotionCache";
@@ -106,12 +106,12 @@ const App = ({ Component, pageProps }: AppProps) => {
                 <title>Avataar</title>
             </Head>
             <ErrorBoundary>
-                <StrumProvider>
+                <DesignProvider>
                     <ThemeProvider attribute="class" enableSystem={false}>
                         <CssBaseline />
                         <Component {...pageProps} />
                     </ThemeProvider>
-                </StrumProvider>
+                </DesignProvider>
             </ErrorBoundary>
         </CacheProvider>
     )

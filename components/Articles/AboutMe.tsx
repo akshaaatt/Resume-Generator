@@ -1,7 +1,7 @@
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { CMSPersonalInformation } from '../../cms-integration/markdown/personal';
-import Box from '../../src/strum-design-system/components/Box/Box';
+import Box from '../Design/components/Box/Box';
 import SectionHeader from '../SectionHeader/SectionHeader';
 
 interface AboutMeProps {

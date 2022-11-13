@@ -1,5 +1,5 @@
 import { style } from '@vanilla-extract/css';
-import { vars } from '../../src/strum-design-system/themes/contract.css';
+import { vars } from '../Design/themes/contract.css';
 
 export const articleStyle = style({
   selectors: {

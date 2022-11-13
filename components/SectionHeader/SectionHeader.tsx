@@ -2,9 +2,9 @@ import { faCircle, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import usePrefersDarkMode from '../../helpers/useDarkMode';
-import Heading from '../../src/strum-design-system/components/Heading/Heading';
-import colors from '../../src/strum-design-system/themes/timbre/colors';
-import { composeWithAtoms } from '../../src/strum-design-system/utils/compose';
+import Heading from '../Design/components/Heading/Heading';
+import colors from '../Design/themes/timbre/colors';
+import { composeWithAtoms } from '../Design/utils/compose';
 
 interface SectionHeaderProps {
   icon: IconDefinition;

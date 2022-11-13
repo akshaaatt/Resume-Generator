@@ -1,6 +1,6 @@
 import { style } from '@vanilla-extract/css';
-import { atoms } from '../../src/strum-design-system/sprinkles.css';
-import { vars } from '../../src/strum-design-system/themes/contract.css';
+import { atoms } from '../Design/sprinkles.css';
+import { vars } from '../Design/themes/contract.css';
 
 export const footerStyle = atoms({
   backgroundColor: { darkMode: 'black', lightMode: 'medium' },

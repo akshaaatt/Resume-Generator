@@ -1,5 +1,5 @@
 import { styleVariants } from '@vanilla-extract/css';
-import { atoms } from '../../src/strum-design-system/sprinkles.css';
+import { atoms } from '../Design/sprinkles.css';
 
 const sectionBaseStyle = atoms({
   paddingY: { xs: 6, md: 6, lg: 8 },

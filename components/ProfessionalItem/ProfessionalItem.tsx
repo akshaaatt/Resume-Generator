@@ -2,8 +2,8 @@ import { faCalendar } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { CMSProfessionalExperience } from '../../cms-integration/markdown/professional';
-import Heading from '../../src/strum-design-system/components/Heading/Heading';
-import { atoms } from '../../src/strum-design-system/sprinkles.css';
+import Heading from '../Design/components/Heading/Heading';
+import { atoms } from '../Design/sprinkles.css';
 import { articleStyle } from '../Articles/article.css';
 
 const ProfessionalItem: React.FC<CMSProfessionalExperience> = (props) => {

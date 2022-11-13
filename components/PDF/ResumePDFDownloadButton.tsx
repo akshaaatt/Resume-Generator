@@ -2,8 +2,8 @@ import { faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import usePrefersDarkMode from '../../helpers/useDarkMode';
-import { buttonStyle } from '../../src/strum-design-system/components/Button/Button.css';
-import { atoms } from '../../src/strum-design-system/sprinkles.css';
+import { buttonStyle } from '../Design/components/Button/Button.css';
+import { atoms } from '../Design/sprinkles.css';
 
 interface PDFDownloadButtonProps {
   secret?: string;

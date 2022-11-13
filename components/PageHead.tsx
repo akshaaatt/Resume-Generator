@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import React from 'react';
 import { CMSPersonalInformation } from '../cms-integration/markdown/personal';
 import { getFullName } from '../helpers/utils';
-import colors from '../src/strum-design-system/themes/timbre/colors';
+import colors from './Design/themes/timbre/colors';
 
 interface PageHeadProps {
   baseURL?: string;
