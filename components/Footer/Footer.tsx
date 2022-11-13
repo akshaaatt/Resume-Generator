@@ -10,7 +10,7 @@ import Container from '../../src/strum-design-system/components/Container/Contai
 import { atoms } from '../../src/strum-design-system/sprinkles.css';
 import { visuallyHidden } from '../../src/strum-design-system/styles/accessibility.css';
 import colors from '../../src/strum-design-system/themes/timbre/colors';
-import { footerLinkStyle, footerStyle } from './Footer.css';
+import { footerStyle } from './Footer.css';
 
 interface FooterProps {
   personalInformation: CMSPersonalInformation;
@@ -33,6 +33,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                   href={link.href}
                   rel="noopener noreferrer"
                   target="_blank"
+                  data-tooltip={link.title}
                 >
                   <span className={visuallyHidden}>
                     {personalInformation.attributes.givenName} on {link.title}

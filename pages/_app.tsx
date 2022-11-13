@@ -9,6 +9,13 @@ import StrumProvider from '../src/strum-design-system/components/StrumProvider/S
 import colors from '../src/strum-design-system/themes/timbre/colors';
 import '../styles/app.css';
 
+// Client-side cache, shared for the whole session of the user in the browser.
+const clientSideEmotionCache = createEmotionCache();
+
+interface MyAppProps extends AppProps {
+    emotionCache?: EmotionCache;
+}
+
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
