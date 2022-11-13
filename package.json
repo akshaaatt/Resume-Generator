@@ -24,11 +24,15 @@
     "types": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
+    "@emotion/react": "11.10.5",
+    "@emotion/styled": "11.10.5",
     "@fortawesome/fontawesome-svg-core": "6.2.0",
     "@fortawesome/free-brands-svg-icons": "6.2.0",
     "@fortawesome/free-regular-svg-icons": "6.1.2",
     "@fortawesome/free-solid-svg-icons": "6.1.2",
     "@fortawesome/react-fontawesome": "0.2.0",
+    "@mui/icons-material": "5.10.9",
+    "@mui/material": "5.10.13",
     "@react-pdf/renderer": "2.3.0",
     "@vanilla-extract/css": "1.9.1",
     "@vanilla-extract/css-utils": "0.1.2",
@@ -43,12 +47,14 @@
     "next": "12.2.4",
     "next-compose-plugins": "2.2.1",
     "next-pwa": "5.5.5",
+    "next-themes": "0.2.1",
     "normalize.css": "8.0.1",
     "polished": "4.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-pdf-html": "1.1.14",
     "react-transition-group": "4.4.5",
+    "sass": "1.56.1",
     "tiny-invariant": "1.2.0"
   },
   "devDependencies": {

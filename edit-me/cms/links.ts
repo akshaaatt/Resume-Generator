@@ -7,14 +7,14 @@ export const links: CMSLink[] = [
     title: 'GitHub',
   },
   {
-    href: 'https://www.instagram.com/akshaaatt',
-    iconName: 'instagram',
-    title: 'Instagram',
-  },
-  {
     href: 'https://www.linkedin.com/in/akshaaatt',
     iconName: 'linkedin',
     title: 'LinkedIn',
+  },
+  {
+    href: 'https://www.youtube.com/@akshaaatt19',
+    iconName: 'youtube',
+    title: 'Youtube',
   },
   {
     href: 'https://www.npmjs.com/@akshaaatt',
@@ -35,5 +35,15 @@ export const links: CMSLink[] = [
     href: 'https://twitter.com/akshaaatt',
     iconName: 'twitter',
     title: 'Twitter',
+  },
+  {
+    href: 'https://www.facebook.com/akshaaatt/',
+    iconName: 'facebook',
+    title: 'Facebook',
+  },
+  {
+    href: 'https://www.instagram.com/akshaaatt',
+    iconName: 'instagram',
+    title: 'Instagram',
   },
 ];
