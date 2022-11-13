@@ -7,34 +7,114 @@ import '../helpers/fontawesomeConfig';
 import '../src/strum-design-system';
 import StrumProvider from '../src/strum-design-system/components/StrumProvider/StrumProvider';
 import colors from '../src/strum-design-system/themes/timbre/colors';
-import '../styles/app.css';
+import '../styles/globals.scss';
+import { CacheProvider } from '@emotion/react'
+import createEmotionCache from "../components/Utils/createEmotionCache";
+import {useMount} from "../hooks/useMount";
+import { ThemeProvider } from 'next-themes';
+import {CssBaseline} from "@mui/material";
 
-// Client-side cache, shared for the whole session of the user in the browser.
-const clientSideEmotionCache = createEmotionCache();
+const clientSideEmotionCache = createEmotionCache()
 
-interface MyAppProps extends AppProps {
-    emotionCache?: EmotionCache;
+const App = ({ Component, pageProps }: AppProps) => {
+    const mounted = useMount()
+    if (!mounted) return
+
+    return (
+        <CacheProvider value={clientSideEmotionCache}>
+            <Head>
+                <meta charSet="utf-8" />
+
+                <link
+                    rel="apple-touch-icon"
+                    sizes="57x57"
+                    href="/assets/favicons/apple-icon-57x57.png"
+                />
+                <link
+                    rel="apple-touch-icon"
+                    sizes="60x60"
+                    href="/assets/favicons/apple-icon-60x60.png"
+                />
+                <link
+                    rel="apple-touch-icon"
+                    sizes="72x72"
+                    href="/assets/favicons/apple-icon-72x72.png"
+                />
+                <link
+                    rel="apple-touch-icon"
+                    sizes="76x76"
+                    href="/assets/favicons/apple-icon-76x76.png"
+                />
+                <link
+                    rel="apple-touch-icon"
+                    sizes="114x114"
+                    href="/assets/favicons/apple-icon-114x114.png"
+                />
+                <link
+                    rel="apple-touch-icon"
+                    sizes="120x120"
+                    href="/assets/favicons/apple-icon-120x120.png"
+                />
+                <link
+                    rel="apple-touch-icon"
+                    sizes="144x144"
+                    href="/assets/favicons/apple-icon-144x144.png"
+                />
+                <link
+                    rel="apple-touch-icon"
+                    sizes="152x152"
+                    href="/assets/favicons/apple-icon-152x152.png"
+                />
+                <link
+                    rel="apple-touch-icon"
+                    sizes="180x180"
+                    href="/assets/favicons/apple-icon-180x180.png"
+                />
+                <link rel="mask-icon" href="/assets/favicons/apple-icon-180x180.png" />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="192x192"
+                    href="/assets/favicons/android-icon-192x192.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="32x32"
+                    href="/assets/favicons/favicon-32x32.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="96x96"
+                    href="/assets/favicons/favicon-96x96.png"
+                />
+                <link
+                    rel="icon"
+                    type="image/png"
+                    sizes="16x16"
+                    href="/assets/favicons/favicon-16x16.png"
+                />
+                <link rel="manifest" href="/assets/favicons/manifest.json" />
+                <meta name="msapplication-TileColor" content="#ffffff" />
+                <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+                <meta name="theme-color" content={colors.primary} />
+
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="description" content="Records Dashboard of Avataar" />
+
+                <title>Avataar</title>
+            </Head>
+            <ErrorBoundary>
+                <StrumProvider>
+                    <ThemeProvider attribute="class" enableSystem={false}>
+                        <CssBaseline />
+                        <Component {...pageProps} />
+                    </ThemeProvider>
+                </StrumProvider>
+            </ErrorBoundary>
+        </CacheProvider>
+    )
 }
 
-const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
-  return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content={colors.primary} />
-        <link rel="icon" href="/public/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/public/favicon-512.png" sizes="512x512" />
-        <link rel="apple-touch-icon" href="/public/favicon-512.png" />
-        <link rel="manifest" href="/public/manifest.json" />
-      </Head>
-
-      <ErrorBoundary>
-        <StrumProvider>
-          <Component {...pageProps} />
-        </StrumProvider>
-      </ErrorBoundary>
-    </>
-  );
-};
-
-export default MyApp;
+export default App

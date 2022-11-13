@@ -1,5 +1,6 @@
 import React from 'react'
-import { TbMoon, TbSun } from 'react-icons/tb'
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const ThemeToggle = ({ onClick, theme }) => {
   return (
@@ -9,7 +10,7 @@ const ThemeToggle = ({ onClick, theme }) => {
                             ${theme === 'light' && 'bg-gray-200'} rounded-full`}
         onClick={() => onClick('light')}
       >
-        <TbSun size={16} />
+        <LightModeIcon />
       </div>
       <div
         className={`flex items-center justify-center flex-1 p-1 cursor-pointer gap-1
@@ -18,7 +19,7 @@ const ThemeToggle = ({ onClick, theme }) => {
                             } rounded-full`}
         onClick={() => onClick('dark')}
       >
-        <TbMoon size={16} />
+        <DarkModeIcon />
       </div>
     </div>
   )

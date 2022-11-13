@@ -9,10 +9,13 @@ import CVPDFDownloadButton from '../PDF/CVPDFDownloadButton';
 import { headerStyle } from './Header.css';
 import ResumePDFDownloadButton from "../PDF/ResumePDFDownloadButton";
 import Image from "next/image";
-import myImage from '../../public/pdf/myImage.jpg'
+import myImage from '../../public/assets/img/myImage.jpg'
+import ThemeToggle from "../Utils/ThemeToggle";
+import { useTheme } from 'next-themes'
 
 const Header: React.FC<ResumePageProps> = (props) => {
   const { personalInformation, secret } = props;
+  const { theme, setTheme } = useTheme()
 
   return (
     <header className={headerStyle}>
@@ -48,6 +51,17 @@ const Header: React.FC<ResumePageProps> = (props) => {
           >
             <CVPDFDownloadButton secret={secret} />
           </Column>
+          {/*<Column*/}
+          {/*    atoms={{ paddingTop: { xs: 4, md: 0 } }}*/}
+          {/*    width={{ xs: 12, sm: 12, md: 'auto' }}*/}
+          {/*>*/}
+          {/*  <ThemeToggle*/}
+          {/*      theme={theme}*/}
+          {/*      onClick={(theme) => {*/}
+          {/*        setTheme(theme)*/}
+          {/*      }}*/}
+          {/*  />*/}
+          {/*</Column>*/}
         </Row>
       </Container>
     </header>
