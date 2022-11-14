@@ -186,6 +186,11 @@
   resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.18.9.tgz#4b8aea3b069d8cb8a72cdfe28ddf5ceca695ef2f"
   integrity sha512-aBXPT3bmtLryXaoJLyYPXPlSD4p1ld9aYeR+sJNOZjJJGiOpb+fKfh3NkcCu7J54nUJwCERPBExCCpyCOHnu/w==
 
+"@babel/helper-plugin-utils@^7.19.0":
+  version "7.20.2"
+  resolved "https://registry.yarnpkg.com/@babel/helper-plugin-utils/-/helper-plugin-utils-7.20.2.tgz#d1b9000752b18d0877cff85a5c376ce5c3121629"
+  integrity sha512-8RvlJG2mj4huQ4pZ+rU9lqKi9ZKiRmuvGuM2HlWmkmgOhbs6zEAw6IEiJ5cQqGbDzGZOhwuOQNtZMi/ENLjZoQ==
+
 "@babel/helper-remap-async-to-generator@^7.18.6", "@babel/helper-remap-async-to-generator@^7.18.9":
   version "7.18.9"
   resolved "https://registry.yarnpkg.com/@babel/helper-remap-async-to-generator/-/helper-remap-async-to-generator-7.18.9.tgz#997458a0e3357080e54e1d79ec347f8a8cd28519"
@@ -532,6 +537,13 @@
   integrity sha512-hx++upLv5U1rgYfwe1xBQUhRmU41NEvpUvrp8jkrSCdvGSnM5/qdRMtylJ6PG5OFkBaHkbTAKTnd3/YyESRHFw==
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
+
+"@babel/plugin-syntax-typescript@^7.18.6":
+  version "7.20.0"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-typescript/-/plugin-syntax-typescript-7.20.0.tgz#4e9a0cfc769c85689b77a2e642d24e9f697fc8c7"
+  integrity sha512-rd9TkG+u1CExzS4SM1BlMEhMXwFLKVjOAFFCDx9PbX5ycJWDoWMcwdJH9RhkPu1dOgn5TrxLot/Gx6lWFuAUNQ==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.19.0"
 
 "@babel/plugin-transform-arrow-functions@^7.18.6":
   version "7.18.6"
@@ -1732,6 +1744,13 @@
     "@typescript-eslint/types" "5.42.1"
     eslint-visitor-keys "^3.3.0"
 
+"@vanilla-extract/babel-plugin-debug-ids@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin-debug-ids/-/babel-plugin-debug-ids-1.0.0.tgz#82e18dc1b9aa897e3a5798720d6b14cdfeffe908"
+  integrity sha512-Q2Nh/0FEAENfcphAv+fvcMoKfl3bhPWO/2x3MPviNAhsTsvuvYPuRtLjcXwoe4aJ8MxxI46JLY33j8NBEzpTIg==
+  dependencies:
+    "@babel/core" "^7.13.10"
+
 "@vanilla-extract/babel-plugin@1.1.7":
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/@vanilla-extract/babel-plugin/-/babel-plugin-1.1.7.tgz#b086875db3f66963223b7eb9e6a961796c041ef9"
@@ -1776,12 +1795,28 @@
     lodash "^4.17.21"
     outdent "^0.8.0"
 
-"@vanilla-extract/next-plugin@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.0.2.tgz#f497158abb422c4681e173fc238161b33fd19e6b"
-  integrity sha512-91xtYoE/TVQcL9vkjN1sP8SDoDJVVuHOhwjeR3W1jgLFrKydrODRxmu9qzuRKcBVM2R7ayGdBQOKmm3HL2xpug==
+"@vanilla-extract/integration@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/integration/-/integration-6.0.0.tgz#6e366316e4f1e8a57734a5ed6907ed48b4f01094"
+  integrity sha512-uBz4QAhKYswyhN3LYd4duuN3uq7WT1jKckd0sP2+Y8gL+6UXdhN9QOUvNBfvofkrYYWqS8efH4hnsGyyWW8f+w==
   dependencies:
-    "@vanilla-extract/webpack-plugin" "^2.1.7"
+    "@babel/core" "^7.13.10"
+    "@babel/plugin-syntax-typescript" "^7.18.6"
+    "@vanilla-extract/babel-plugin-debug-ids" "^1.0.0"
+    "@vanilla-extract/css" "^1.7.2"
+    esbuild "^0.11.16"
+    eval "0.1.6"
+    find-up "^5.0.0"
+    javascript-stringify "^2.0.1"
+    lodash "^4.17.21"
+    outdent "^0.8.0"
+
+"@vanilla-extract/next-plugin@2.1.1":
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/next-plugin/-/next-plugin-2.1.1.tgz#c030bb930d7e64739158e36bf49bdd55c96102af"
+  integrity sha512-8+7WRL7JRv9w9MOwTpVi/ZDv3qXkxjkgJgxzS9wQJHjvdfcs0Xyq30ePeaJfBN4b6ClUeqOdj7UYa8fqKA8oOQ==
+  dependencies:
+    "@vanilla-extract/webpack-plugin" "^2.2.0"
     browserslist "^4.19.1"
 
 "@vanilla-extract/private@^1.0.3":
@@ -1799,12 +1834,12 @@
   resolved "https://registry.yarnpkg.com/@vanilla-extract/sprinkles/-/sprinkles-1.4.1.tgz#8c8703ddedaac355c1187db909119816c0fc771c"
   integrity sha512-aW6CfMMToX4a+baLuVxwcT0FSACjX3xrNt8wdi/3LLRlLAfhyue8OK7kJxhcYNZfydBeWTP59aRy8p5FUTIeew==
 
-"@vanilla-extract/webpack-plugin@^2.1.7":
-  version "2.1.12"
-  resolved "https://registry.yarnpkg.com/@vanilla-extract/webpack-plugin/-/webpack-plugin-2.1.12.tgz#b4c02b3acf59aa236ec4de9f49ab761370a4b2b0"
-  integrity sha512-8mAbIDEh9r7a5cgb3wcILzuhEbGNddV4/qvwogOlxhoGrP4deUKJHEtPURDviWZ+x/FzFZtZ3glWU7WD8+WN8A==
+"@vanilla-extract/webpack-plugin@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@vanilla-extract/webpack-plugin/-/webpack-plugin-2.2.0.tgz#e7d07543d531a9fe283c37eebaabe746a44fbe30"
+  integrity sha512-EQrnT7gIki+Wm57eIRZRw6pi4M4VVnwiSp5OOcQF81XdZvoYXo51Ern7+dHKS+Xxli151BWTUsg/UZSpaAz29Q==
   dependencies:
-    "@vanilla-extract/integration" "^5.0.0"
+    "@vanilla-extract/integration" "^6.0.0"
     chalk "^4.1.1"
     debug "^4.3.1"
     loader-utils "^2.0.0"
