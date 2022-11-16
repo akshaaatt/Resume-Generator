@@ -194,14 +194,9 @@ const PDF = (props) => {
   const year = new Date().getFullYear();
 
   return (
-    // @ts-ignore
     <Document author={fullName} title={`Résume for ${fullName}, ${year}`}>
-      {/* @ts-ignore */}
       <Page size="LETTER" style={styles.page}>
         <View style={styles.sidebar}>
-          <Image
-              src={myImage}
-          />
           <View style={styles.header}>
             <Text style={styles.headerTitle}>{fullName}</Text>
             <Text style={styles.headerSubtitle}>
