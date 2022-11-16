@@ -1,7 +1,6 @@
 import { faIdCard } from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
 import { CMSPersonalInformation } from '../../cms-integration/markdown/personal';
-import { CMSPrivateInformation } from '../../cms-integration/markdown/private';
 import Box from '../Design/components/Box/Box';
 import Column from '../Design/components/Layout/Column';
 import Row from '../Design/components/Layout/Row';
@@ -11,11 +10,10 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 
 interface ContactInformationProps {
   personalInformation: CMSPersonalInformation;
-  privateInformation?: CMSPrivateInformation[];
 }
 
 const ContactInformation: React.FC<ContactInformationProps> = (props) => {
-  const { personalInformation, privateInformation } = props;
+  const { personalInformation } = props;
 
   return (
     <Box as="article" marginBottom={{ xs: 6, lg: 0 }}>
@@ -54,21 +52,6 @@ const ContactInformation: React.FC<ContactInformationProps> = (props) => {
             </Column>
           </Row>
         </NavListItem>
-        {privateInformation &&
-          privateInformation.map((privateField) => (
-            <NavListItem key={privateField.attributes.label}>
-              <Row>
-                <Column width={{ xs: 'auto' }}>
-                  <strong>{privateField.attributes.label}:</strong>
-                </Column>
-                <Column>
-                  <div
-                    dangerouslySetInnerHTML={{ __html: privateField.html }}
-                  />
-                </Column>
-              </Row>
-            </NavListItem>
-          ))}
       </UnorderedList>
     </Box>
   );

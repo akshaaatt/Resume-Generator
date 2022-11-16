@@ -5,12 +5,7 @@ import usePrefersDarkMode from '../../helpers/useDarkMode';
 import { buttonStyle } from '../Design/components/Button/Button.css';
 import { atoms } from '../Design/sprinkles.css';
 
-interface PDFDownloadButtonProps {
-  secret?: string;
-}
-
-const CVPDFDownloadButton: React.FC<PDFDownloadButtonProps> = (props) => {
-  const { secret } = props;
+const CVPDFDownloadButton = () => {
   const darkMode = usePrefersDarkMode();
 
   return (
@@ -20,7 +15,7 @@ const CVPDFDownloadButton: React.FC<PDFDownloadButtonProps> = (props) => {
         color: darkMode ? 'primary' : 'medium',
         size: 'lg',
       })}
-      href={secret ? `/api/pdf?secret=${secret}` : '/api/cv_pdf'}
+      href='/api/cv_pdf'
       target="_blank"
     >
       <FontAwesomeIcon className={atoms({ marginRight: 2 })} icon={faFilePdf} />

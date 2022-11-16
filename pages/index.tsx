@@ -1,7 +1,5 @@
-import { InferGetStaticPropsType, NextPage } from 'next';
 import React from 'react';
 import getCMSIntegration from '../cms-integration/getCMSIntegration';
-import { CMSPrivateInformation } from '../cms-integration/markdown/private';
 import ResumeLayout from '../components/ResumeLayout/ResumeLayout';
 
 export const getStaticProps = async () => {
@@ -26,13 +24,7 @@ export const getStaticProps = async () => {
   };
 };
 
-export interface ResumePageProps
-  extends InferGetStaticPropsType<typeof getStaticProps> {
-  privateInformation?: CMSPrivateInformation[];
-  secret?: string;
-}
-
-const ResumePage: NextPage<ResumePageProps> = (props) => {
+const ResumePage = (props) => {
   return <ResumeLayout {...props} />;
 };
 

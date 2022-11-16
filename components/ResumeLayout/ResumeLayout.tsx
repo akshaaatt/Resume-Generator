@@ -5,7 +5,6 @@ import {
 import indefinite from 'indefinite';
 import React from 'react';
 import { getFullName } from '../../helpers/utils';
-import { ResumePageProps } from '../../pages';
 import Box from '../Design/components/Box/Box';
 import Column from '../Design/components/Layout/Column';
 import Row from '../Design/components/Layout/Row';
@@ -20,16 +19,13 @@ import ProfessionalItem from '../ProfessionalItem/ProfessionalItem';
 import Section from '../Section/Section';
 import SectionHeader from '../SectionHeader/SectionHeader';
 
-const ResumeLayout: React.FC<ResumePageProps> = (props) => {
+const ResumeLayout = (props) => {
   const {
     education,
     hobbies,
     links,
     personalInformation,
-    privateInformation,
     professional,
-    secret,
-    skills,
   } = props;
   const fullName = getFullName(personalInformation);
   const jobTitle = indefinite(personalInformation.attributes.title);
@@ -42,7 +38,7 @@ const ResumeLayout: React.FC<ResumePageProps> = (props) => {
         title={`Resume | ${fullName} | ${personalInformation.attributes.location}`}
       />
 
-      <Header secret={secret} {...props} />
+      <Header {...props} />
 
       <Section color="standard">
         <Row>
@@ -52,7 +48,6 @@ const ResumeLayout: React.FC<ResumePageProps> = (props) => {
           <Column width={{ xs: 12, lg: 6 }}>
             <ContactInformation
               personalInformation={personalInformation}
-              privateInformation={privateInformation}
             />
           </Column>
         </Row>

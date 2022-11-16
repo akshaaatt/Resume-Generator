@@ -1,6 +1,5 @@
 import React from 'react';
 import { getFullName } from '../../helpers/utils';
-import { ResumePageProps } from '../../pages';
 import Container from '../Design/components/Container/Container';
 import Heading from '../Design/components/Heading/Heading';
 import Column from '../Design/components/Layout/Column';
@@ -13,8 +12,8 @@ import myImage from '../../public/assets/img/myImage.jpg'
 import ThemeToggle from "../Utils/ThemeToggle";
 import { useTheme } from 'next-themes'
 
-const Header: React.FC<ResumePageProps> = (props) => {
-  const { personalInformation, secret } = props;
+const Header = (props) => {
+  const { personalInformation} = props;
   const { theme, setTheme } = useTheme()
 
   return (
@@ -43,13 +42,13 @@ const Header: React.FC<ResumePageProps> = (props) => {
             atoms={{ paddingTop: { xs: 4, md: 0 } }}
             width={{ xs: 12, sm: 12, md: 'auto' }}
           >
-            <ResumePDFDownloadButton secret={secret} />
+            <ResumePDFDownloadButton />
           </Column>
           <Column
               atoms={{ paddingTop: { xs: 4, md: 0 } }}
               width={{ xs: 12, sm: 12, md: 'auto' }}
           >
-            <CVPDFDownloadButton secret={secret} />
+            <CVPDFDownloadButton />
           </Column>
           {/*<Column*/}
           {/*    atoms={{ paddingTop: { xs: 4, md: 0 } }}*/}

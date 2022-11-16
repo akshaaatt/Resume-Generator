@@ -12,7 +12,6 @@ import React from 'react';
 import Html from 'react-pdf-html';
 import { HtmlProps } from 'react-pdf-html/dist/Html';
 import { getFullName } from '../../helpers/utils';
-import { ResumePageProps } from '../../pages';
 import colors from '../Design/themes/timbre/colors';
 import spacers from '../Design/themes/timbre/spacers';
 
@@ -183,12 +182,11 @@ const htmlProps: Omit<HtmlProps, 'children'> = {
   },
 };
 
-const PDF: React.FC<ResumePageProps> = (props) => {
+const PDF = (props) => {
   const {
     education,
     hobbies,
     personalInformation,
-    privateInformation,
     professional,
     skills,
   } = props;
@@ -241,14 +239,6 @@ const PDF: React.FC<ResumePageProps> = (props) => {
                 <Text style={styles.bold}>Contact number:</Text>
                 <Text>&nbsp;{personalInformation.attributes.contactNumber}</Text>
               </View>
-              {privateInformation?.map((privateField) => (
-                <View key={privateField.slug} style={styles.flexRowAlignStart}>
-                  <Text style={styles.bold}>
-                    {privateField.attributes.label}:&nbsp;
-                  </Text>
-                  <Html {...htmlProps}>{privateField.html}</Html>
-                </View>
-              ))}
             </View>
             <View style={styles.section}>
               <View style={styles.sectionHeading}>
