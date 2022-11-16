@@ -1,5 +1,4 @@
 import {
-  createMapValueFn,
   createSprinkles,
   defineProperties,
 } from '@vanilla-extract/sprinkles';
@@ -75,7 +74,5 @@ const colorProperties = defineProperties({
 });
 
 export const atoms = createSprinkles(responsiveProperties, colorProperties);
-
-export const mapResponsiveValue = createMapValueFn(responsiveProperties);
 
 export type Atoms = Parameters<typeof atoms>[0];

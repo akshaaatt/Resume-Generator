@@ -26,16 +26,6 @@ A series of Markdown files at `edit-me/cms/privateFields`. You can use a number 
 
 The markdown content will be rendered as HTML to display the content of the field. Keep it short!
 
-### Skills
-
-A series of Markdown files at `edit-me/cms/skills`. You can use a number prefix to order them, as the items will be displayed in the same order they are arranged in the folder. You can add more or less than three, but you will probably need to modify the design if you plan to change this.
-
-| Field Name | Type           | Description                                                                                            |
-| ---------- | -------------- | ------------------------------------------------------------------------------------------------------ |
-| `title`    | text, required | A designator to describe the category of skills, e.g. "Soft Skills" or a strength such as "Proficient" |
-
-The markdown content will be rendered as HTML to display the skills for that category. We recommend a simple block of text with comma-separated skills.
-
 ### Professional Experiences
 
 A series of Markdown files at `edit-me/cms/professionalExperiences`. You can use a number prefix to order them, as the items will be displayed in the same order they are arranged in the folder.

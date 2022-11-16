@@ -188,7 +188,6 @@ const PDF = (props) => {
     hobbies,
     personalInformation,
     professional,
-    skills,
   } = props;
   const fullName = getFullName(personalInformation);
   const year = new Date().getFullYear();
@@ -234,34 +233,6 @@ const PDF = (props) => {
                 <Text style={styles.bold}>Contact number:</Text>
                 <Text>&nbsp;{personalInformation.attributes.contactNumber}</Text>
               </View>
-            </View>
-            <View style={styles.section}>
-              <View style={styles.sectionHeading}>
-                <Image
-                  src={`${iconPath}/circle-checkmark.png`}
-                  style={styles.sectionHeadingIcon}
-                />
-                <Text>Skills &amp; Expertise</Text>
-              </View>
-              {skills.map((skill, skillIndex) => (
-                <View key={skill.slug}>
-                  <View style={styles.itemHeading}>
-                    <View style={styles.sectionHeadingStars}>
-                      {Array.from(Array(skills.length - skillIndex)).map(
-                        (star, starIndex) => (
-                          <Image
-                            key={starIndex}
-                            src={`${iconPath}/star-yellow.png`}
-                            style={styles.sectionHeadingStar}
-                          />
-                        ),
-                      )}
-                    </View>
-                    <Text style={styles.bold}>{skill.attributes.title}</Text>
-                  </View>
-                  <Html {...htmlProps}>{skill.html}</Html>
-                </View>
-              ))}
             </View>
           </View>
         </View>
