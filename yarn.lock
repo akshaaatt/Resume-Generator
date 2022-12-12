@@ -3418,10 +3418,10 @@ imurmurhash@^0.1.4:
   resolved "https://registry.yarnpkg.com/imurmurhash/-/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==
 
-indefinite@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/indefinite/-/indefinite-2.4.1.tgz#6970cfdd373dde4e394dd5f783e59a7c0fb13637"
-  integrity sha512-4C1k983crWkOu4tfmx8by1jQ0xBLBo0EhNV1WsRem2y+IbzLmPkYycjrQe399heo3bZ5OYpImQo2o85vQ0HkSQ==
+indefinite@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/indefinite/-/indefinite-2.4.2.tgz#54371245fe7f71a3b579e64f27adaafa9b7fb68d"
+  integrity sha512-z8fxRTYuBwocAax4kokd5QXxNLbsifh4feUr0CJjTnGtH7H3NF0XRXQYrQsTs0D1WZCqpqtqNz3ouab9oDkcpw==
 
 indent-string@^4.0.0:
   version "4.0.0"
