@@ -31,7 +31,7 @@
     "@fortawesome/free-regular-svg-icons": "6.2.1",
     "@fortawesome/free-solid-svg-icons": "6.1.2",
     "@fortawesome/react-fontawesome": "0.2.0",
-    "@mui/icons-material": "5.10.9",
+    "@mui/icons-material": "5.11.0",
     "@mui/material": "5.11.1",
     "@react-pdf/renderer": "3.0.1",
     "@vanilla-extract/css": "1.9.1",
