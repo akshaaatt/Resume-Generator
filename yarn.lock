@@ -4536,10 +4536,10 @@ react-is@^18.2.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-pdf-html@1.1.14:
-  version "1.1.14"
-  resolved "https://registry.yarnpkg.com/react-pdf-html/-/react-pdf-html-1.1.14.tgz#9746f0caacb863367dd491cf551d04b6262cc95a"
-  integrity sha512-vGXD/VmcMtAzSh/AIAK1ENemKcL1eb2E/Ghrp43nYQLdBhjOOU1hjdvWwPNVRD/4vt4QWAGGXAImb33j84NHVw==
+react-pdf-html@1.1.17:
+  version "1.1.17"
+  resolved "https://registry.yarnpkg.com/react-pdf-html/-/react-pdf-html-1.1.17.tgz#2a2cf210d1d96b2c44cb3c5c52e87c19fb5e08b9"
+  integrity sha512-9Ksaq+ycdm4VkJRE+jupfKfHLovGF5HBzJoF91sVjP3vafpZxgqGqydNC3tCEYL+D5kluXBvIryXhPWuclU6gA==
   dependencies:
     camelize "^1.0.0"
     css-tree "^1.1.3"
