@@ -13,9 +13,3 @@ const hiddenStyles: ComplexStyleRule = {
 };
 
 export const visuallyHidden = style(hiddenStyles);
-
-export const visuallyHiddenFocusable = style({
-  selectors: {
-    '&:not(:focus):not(:focus-within)': hiddenStyles,
-  },
-});

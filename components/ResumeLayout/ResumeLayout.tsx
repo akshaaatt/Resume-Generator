@@ -18,7 +18,6 @@ import PageHead from '../PageHead';
 import ProfessionalItem from '../ProfessionalItem/ProfessionalItem';
 import Section from '../Section/Section';
 import SectionHeader from '../SectionHeader/SectionHeader';
-import AutoGrid from "../Design/components/AutoGrid/AutoGrid";
 import AutoGridCell from "../Design/components/AutoGrid/AutoGridCell";
 import {visuallyHidden} from "../Design/styles/accessibility.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
@@ -45,7 +44,7 @@ const ResumeLayout = (props) => {
 
             <Header {...props} />
             {links && (
-                <div className='flex flex-wrap justify-center bg-black'>
+                <div className='flex flex-wrap justify-center dark:bg-black bg-gray-200'>
                     {links.map((link) => (
                         <AutoGridCell key={link.href}>
                             <a
